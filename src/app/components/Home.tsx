@@ -109,7 +109,7 @@ export function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl text-black mb-4">
-              Why Choose <span className="text-[#D4AF37]">LegalRegister</span>
+              Why Choose <span className="text-[#D4AF37]">Corporate Desk</span>
             </h2>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
               We provide comprehensive business registration services tailored to your needs.
