@@ -31,18 +31,24 @@ export function About() {
 
   const team = [
     {
-      name: "Sarah Johnson",
+      name: "Okello Wilson",
       role: "Founder & CEO",
+      description:
+        "With over 15 years of experience in business law and registration, Okello is passionate about helping entrepreneurs navigate the complexities of starting a business. He founded Corporate Desk to provide accessible, efficient, and affordable registration services to businesses of all sizes.",
       image: "https://images.unsplash.com/photo-1748346918817-0b1b6b2f9bab?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjBvZmZpY2UlMjB0ZWFtfGVufDF8fHx8MTc3MTIzNDU5MXww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
     },
     {
-      name: "Michael Chen",
+      name: "James Onyoin",
       role: "Legal Director",
+      description:
+        "James brings a wealth of legal expertise to Corporate Desk, overseeing all legal aspects of our services and ensuring our clients receive the highest level of support. With a background in corporate law and compliance, James is dedicated to helping businesses succeed while staying compliant with all regulations.",
       image: "https://images.unsplash.com/photo-1758518731462-d091b0b4ed0d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxsZWdhbCUyMGRvY3VtZW50cyUyMG9mZmljZXxlbnwxfHx8fDE3NzEyMjk1NDl8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
     },
     {
       name: "Emily Rodriguez",
-      role: "Client Services Manager",
+      role: "CTO",
+      description:
+        "Emily leads our technology team, developing innovative solutions to streamline the business registration process. With a background in software engineering and a passion for user experience, Emily is committed to creating a seamless and efficient platform for our clients.",
       image: "https://images.unsplash.com/photo-1758518730384-be3d205838e8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwcm9mZXNzaW9uYWwlMjBidXNpbmVzcyUyMG1lZXRpbmclMjBoYW5kc2hha2V8ZW58MXx8fHwxNzcxMzE5NjMwfDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
     },
   ];
@@ -54,7 +60,7 @@ export function About() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl">
             <h1 className="text-4xl md:text-5xl mb-6">
-              About <span className="text-[#D4AF37]">LegalRegister</span>
+              About <span className="text-[#D4AF37]">Corporate Desk</span>
             </h1>
             <p className="text-lg text-gray-300">
               We're dedicated to making business registration simple, efficient, and accessible
@@ -74,7 +80,7 @@ export function About() {
               </h2>
               <div className="space-y-4 text-gray-600">
                 <p>
-                  Founded in 2010, LegalRegister began with a simple mission: to demystify the
+                  Founded in 2026, Corporate Desk began with a simple mission: to demystify the
                   complex world of business registration and make it accessible to everyone. Our
                   founder, Sarah Johnson, experienced firsthand the challenges of navigating legal
                   paperwork when starting her first business.
@@ -122,7 +128,7 @@ export function About() {
             {values.map((value, index) => (
               <div
                 key={index}
-                className="bg-white p-8 rounded-lg border border-gray-200 hover:border-[#D4AF37] hover:shadow-lg transition-all"
+                className="bg-white p-8 rounded-lg border border-gray-200 hover:border-[#D4AF37] hover:shadow-lg transition-all hover:translate-y-[-2%] transition-transform"
               >
                 <div className="bg-black p-4 rounded-lg inline-block mb-6">
                   <value.icon className="w-8 h-8 text-[#D4AF37]" />
@@ -149,7 +155,7 @@ export function About() {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {team.map((member, index) => (
-              <div key={index} className="text-center">
+              <div key={index} className="relative text-center group">
                 <div className="aspect-square rounded-lg overflow-hidden mb-4 border-4 border-black">
                   <ImageWithFallback
                     src={member.image}
@@ -159,6 +165,9 @@ export function About() {
                 </div>
                 <h3 className="text-xl text-black mb-1">{member.name}</h3>
                 <p className="text-[#D4AF37]">{member.role}</p>
+                <div className="absolute bottom-0 left-0 right-0 bg-[rgba(0,0,0,0.5)] rounded-lg p-4 mx-2 mb-22 float hidden group-hover:block">
+                <p className="text-white">{member.description}</p>
+                </div>
               </div>
             ))}
           </div>
@@ -170,8 +179,8 @@ export function About() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
             {[
-              { value: "5,000+", label: "Clients Served" },
-              { value: "15+", label: "Years Experience" },
+              { value: "50+", label: "Clients Served" },
+              { value: "5+", label: "Years Experience" },
               { value: "98%", label: "Success Rate" },
               { value: "50+", label: "States Covered" },
             ].map((stat, index) => (

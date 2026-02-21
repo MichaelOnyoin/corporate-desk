@@ -3,7 +3,7 @@ import * as React from 'react';
 import { useState } from 'react';
 
 export const FAQ: React.FC = () => {
-  //const [expandedIndex, setExpandedIndex] = useState<number | null>(null);  
+
    const [expandedFAQ, setExpandedFAQ] = useState<string | null>(null);
     
      {/* FAQ Section */}
@@ -11,8 +11,14 @@ export const FAQ: React.FC = () => {
       <section id="faq" className="py-20 px-6 bg-white">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-16">
-            <p className="text-amber-500 font-semibold mb-4">COMMON QUESTIONS</p>
-            <h2 className="text-5xl font-bold text-black">Frequently Asked Questions</h2>
+            <p className="text-lg font-semibold text-gray-600 max-w-2xl mx-auto">
+              COMMON QUESTIONS ABOUT OUR SERVICES AND BUSINESS REGISTRATION IN GENERAL
+            </p>
+            {/* <p className="text-amber-500 font-semibold mb-4">COMMON QUESTIONS</p> */}
+            {/* <h2 className="text-5xl font-bold text-black">Frequently Asked Questions</h2> */}
+            <h2 className="text-3xl md:text-4xl text-black mb-4">
+              Frequently asked <span className="text-[#D4AF37]">Questions</span>
+            </h2>
           </div>
 
           <div className="space-y-4">
@@ -23,7 +29,7 @@ export const FAQ: React.FC = () => {
               },
               {
                 q: 'What countries do you serve?',
-                a: 'We provide services in 50+ countries including USA, UK, Canada, Australia, Singapore, UAE, Nigeria, and more.'
+                a: 'We provide services in 5+ countries including Uganda, Kenya, Tanzania, Rwanda, South Sudan and more.'
               },
               {
                 q: 'Is there a hidden fee structure?',
@@ -48,7 +54,7 @@ export const FAQ: React.FC = () => {
                   className="w-full p-6 bg-white hover:bg-gray-50 flex justify-between items-center font-bold text-black text-lg"
                 >
                   {faq.q}
-                  <span className="text-amber-500 text-2xl">{expandedFAQ === i.toString() ? '−' : '+'}</span>
+                  <span className="text-[#D4AF37] text-2xl">{expandedFAQ === i.toString() ? '−' : '+'}</span>
                 </button>
                 {expandedFAQ === i.toString() && (
                   <div className="p-6 bg-gray-50 border-t-2 border-black text-gray-700">

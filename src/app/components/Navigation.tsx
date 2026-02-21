@@ -1,14 +1,14 @@
 import { Link, useLocation } from "react-router";
 import { Menu, X, Scale } from "lucide-react";
 import { useState } from "react";
-import {
-  Collapsible,
-  CollapsibleContent,
-  CollapsibleTrigger,
-} from "./ui/collapsible"
-import { ChevronDownIcon } from "lucide-react"
-import {Button} from './ui/button'
-import {DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger} from './ui/dropdown-menu'
+// import {
+//   Collapsible,
+//   CollapsibleContent,
+//   CollapsibleTrigger,
+// } from "./ui/collapsible"
+// import { ChevronDownIcon } from "lucide-react"
+// import {Button} from './ui/button'
+// import {DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger} from './ui/dropdown-menu'
 
 export function Navigation() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -33,12 +33,13 @@ export function Navigation() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20">
           {/* Logo */}
-          <Link to="/" className="flex items-center gap-2 hover:opacity-80 transition-opacity">
-            <div className="bg-[#D4AF37] p-2 rounded-lg">
-              <Scale className="w-6 h-6 text-black" />
+          <Link to="/" className="flex items-center gap-0 hover:opacity-80 transition-opacity">
+            <div className="p-0 m-0">
+              {/* <Scale className="w-6 h-6 bg-[#D4AF37] text-black" /> */}
+              <img src="/logos.svg" alt="Corporate Desk Logo" className="w-32 h-32" />
             </div>
             <span className="text-xl tracking-tight">
-              <span className="text-[#D4AF37]">Corporate</span>Desk
+              <span className="text-[#D4AF37]">Corporate </span>Desk
             </span>
           </Link>
 
@@ -66,7 +67,7 @@ export function Navigation() {
             >
               Get Started
             </Link>
-            <Collapsible>
+            {/* <Collapsible>
               
               <CollapsibleTrigger asChild>
               <div className="group w-fit inline" >
@@ -79,7 +80,7 @@ export function Navigation() {
                 Yes. Free to use for personal and commercial projects. No attribution
                 required.
               </CollapsibleContent>
-            </Collapsible>
+            </Collapsible> */}
           </div>
 
           {/* Mobile Menu Button */}

@@ -11,6 +11,7 @@ import {
   Award,
 } from "lucide-react";
 import {FAQ} from "./FAQ";
+import Testimonial from "./Testimonials";
 
 export function Home() {
   const features = [
@@ -22,7 +23,7 @@ export function Home() {
     {
       icon: Shield,
       title: "Legal Compliance",
-      description: "Ensure your business meets all local, state, and federal requirements.",
+      description: "Ensure your business meets all local, regional, and national requirements.",
     },
     {
       icon: Clock,
@@ -37,9 +38,9 @@ export function Home() {
   ];
 
   const stats = [
-    { icon: Building2, value: "5,000+", label: "Businesses Registered" },
+    { icon: Building2, value: "50+", label: "Businesses Registered" },
     { icon: Users, value: "98%", label: "Client Satisfaction" },
-    { icon: Award, value: "15+", label: "Years Experience" },
+    { icon: Award, value: "5+", label: "Years Experience" },
   ];
 
   return (
@@ -67,13 +68,16 @@ export function Home() {
               documentation and compliance requirements so you can focus on what matters most.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
+              <div className="group ">
               <Link
                 to="/contact"
                 className="bg-[#D4AF37] text-black px-8 py-4 rounded-md hover:bg-[#B8941C] transition-colors inline-flex items-center justify-center gap-2"
               >
                 Get Started Today
-                <ArrowRight className="w-5 h-5" />
+                <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition duration-300" />
+                
               </Link>
+              </div>
               <Link
                 to="/services"
                 className="border-2 border-white text-white px-8 py-4 rounded-md hover:bg-white hover:text-black transition-colors inline-flex items-center justify-center"
@@ -120,7 +124,7 @@ export function Home() {
             {features.map((feature, index) => (
               <div
                 key={index}
-                className="bg-white p-6 rounded-lg border border-gray-200 hover:border-[#D4AF37] hover:shadow-lg transition-all"
+                className="bg-white p-6 rounded-lg border border-gray-200 hover:border-[#D4AF37] hover:shadow-lg hover:translate-y-[-4%] transition-transform transition-all duration-300 ease-in-out"
               >
                 <div className="bg-black p-3 rounded-lg inline-block mb-4">
                   <feature.icon className="w-6 h-6 text-[#D4AF37]" />
@@ -144,15 +148,18 @@ export function Home() {
             Let our experts handle the legal paperwork while you focus on building your dream
             business.
           </p>
+          <div className="group">
           <Link
             to="/contact"
             className="bg-[#D4AF37] text-black px-8 py-4 rounded-md hover:bg-[#B8941C] transition-colors inline-flex items-center gap-2"
           >
             Schedule a Consultation
-            <ArrowRight className="w-5 h-5" />
+            <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition duration-300" />
           </Link>
+          </div>
         </div>
       </section>
+      <Testimonial />
     </div>
   );
 }

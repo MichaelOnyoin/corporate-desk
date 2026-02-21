@@ -1,21 +1,23 @@
-@import './fonts.css';
-@import './tailwind.css';
-@import './theme.css';
-
-
 .hero {
   position: relative;
   height: 100vh;
   width: 100%;
-  background-image: url("https://images.unsplash.com/photo-1519389950473-47ba0277781c");
-  background-size: cover;
-  background-position: center;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
   color: white;
   overflow: hidden;
+}
+
+/* Background image layer */
+.hero-bg {
+  position: absolute;
+  inset: 0;
+  background-image: url("https://images.unsplash.com/photo-1519389950473-47ba0277781c");
+  background-size: cover;
+  background-position: center;
+  z-index: 0;
 }
 
 /* Dark overlay */
@@ -42,7 +44,7 @@
 }
 
 .highlight {
-  color: #f5c542; /* golden highlight */
+  color: #f5c542;
 }
 
 .hero-subtitle {
@@ -52,7 +54,6 @@
   opacity: 0.9;
 }
 
-/* Button */
 .hero-button {
   padding: 12px 30px;
   font-size: 1rem;
@@ -61,15 +62,15 @@
   color: white;
   border-radius: 6px;
   cursor: pointer;
-  transition: all 0.3s ease;
+  transition: background 0.3s ease, color 0.3s ease;
 }
 
 .hero-button:hover {
   background: #D4AF37;
-  color: black;
+  color: white;
 }
 
-/* Scroll to top button */
+/* Scroll to top */
 .scroll-top {
   position: absolute;
   bottom: 30px;
@@ -84,11 +85,6 @@
   cursor: pointer;
   z-index: 3;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-  transition: transform 0.2s ease;
-}
-
-.scroll-top:hover {
-  transform: translateY(-3px);
 }
 
 /* Responsive */

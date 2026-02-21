@@ -11,3 +11,5 @@
 # typescript
 *.tsbuildinfo
 #vite-env.d.ts
+/.snapshots
+/.alpackages

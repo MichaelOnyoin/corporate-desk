@@ -156,7 +156,7 @@ export function Contact() {
                   </div>
                   <div>
                     <h3 className="text-black mb-1">Phone</h3>
-                    <p className="text-gray-600">+1 (555) 123-4567</p>
+                    <p className="text-gray-600">+256 (785) 579-3314</p>
                     <p className="text-sm text-gray-500">Mon-Fri 9am-6pm EST</p>
                   </div>
                 </div>
@@ -167,7 +167,7 @@ export function Contact() {
                   </div>
                   <div>
                     <h3 className="text-black mb-1">Email</h3>
-                    <p className="text-gray-600">info@legalregister.com</p>
+                    <p className="text-gray-600">info@corporate-desk.com</p>
                     <p className="text-sm text-gray-500">We'll respond within 24 hours</p>
                   </div>
                 </div>

@@ -11,6 +11,8 @@ import {
   CheckCircle,
 } from "lucide-react";
 import { motion } from "framer-motion";
+import ServiceHero from "./ServiceHero";
+import Hero from "./Hero";
 
 export function Services() {
   const services = [
@@ -114,6 +116,8 @@ export function Services() {
 
   return (
     <div>
+      <Hero/>
+      {/* <ServiceHero /> */}
       {/* Hero Section */}
       <section className="bg-black text-white py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -131,22 +135,25 @@ export function Services() {
 
       {/* Services Grid */}
       <section className="py-20 bg-white">
-        <motion.div
+        
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
+            
+            
+            {services.map((service, index) => (
+
+              <div
+                key={index}
+                className="bg-gray-50 border border-gray-200 rounded-lg p-8 hover:border-[#D4AF37] hover:shadow-xl transition-all"
+              ><motion.div
                 initial={{ opacity: 0, y: 40 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, ease: "easeOut", delay: 0.2 }}
                 viewport={{ once: true, amount: 0.2 }}
                 className="shadow-none"
                 >
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
-            
-            {services.map((service, index) => (
-              <div
-                key={index}
-                className="bg-gray-50 border border-gray-200 rounded-lg p-8 hover:border-[#D4AF37] hover:shadow-xl transition-all"
-              >
+
                 <div className="bg-black p-4 rounded-lg inline-block mb-6">
                   <service.icon className="w-8 h-8 text-[#D4AF37]" />
                 </div>
@@ -160,12 +167,14 @@ export function Services() {
                     </li>
                   ))}
                 </ul>
+                </motion.div>
               </div>
             ))}
+            
           </div>
           
         </div>
-        </motion.div>
+        
       </section>
 
       {/* Process Section */}
