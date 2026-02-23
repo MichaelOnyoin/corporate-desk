@@ -11,7 +11,10 @@ import {
   Award,
 } from "lucide-react";
 import {FAQ} from "./FAQ";
-import Testimonial from "./Testimonials";
+//import Testimonial from "./Testimonials";
+import Testimonials from "./Testimonial";
+// import GlassTestimonials from "./GlassTestimonials";
+// import SwiperTestimonials from "./Swiper";
 
 export function Home() {
   const features = [
@@ -89,24 +92,7 @@ export function Home() {
         </div>
       </section>
 
-      {/* Stats Section */}
-      <section className="bg-white py-12 border-b">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {stats.map((stat, index) => (
-              <div key={index} className="flex items-center gap-4">
-                <div className="bg-black p-3 rounded-lg">
-                  <stat.icon className="w-8 h-8 text-[#D4AF37]" />
-                </div>
-                <div>
-                  <div className="text-3xl text-black">{stat.value}</div>
-                  <div className="text-gray-600">{stat.label}</div>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+      
 
       {/* Features Section */}
       <section className="py-20 bg-gray-50">
@@ -119,7 +105,6 @@ export function Home() {
               We provide comprehensive business registration services tailored to your needs.
             </p>
           </div>
-
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {features.map((feature, index) => (
               <div
@@ -136,7 +121,9 @@ export function Home() {
           </div>
         </div>
       </section>
-      <FAQ />
+
+
+      
 
       {/* CTA Section */}
       <section className="bg-black text-white py-20">
@@ -159,7 +146,32 @@ export function Home() {
           </div>
         </div>
       </section>
-      <Testimonial />
+
+      {/* Stats Section */}
+      <section className="bg-white py-12 border-b">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {stats.map((stat, index) => (
+              <div key={index} className="flex items-center gap-4">
+                <div className="bg-black p-3 rounded-lg">
+                  <stat.icon className="w-8 h-8 text-[#D4AF37]" />
+                </div>
+                <div>
+                  <div className="text-3xl text-black">{stat.value}</div>
+                  <div className="text-gray-600">{stat.label}</div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* <Testimonial /> */}
+      <Testimonials />
+      {/* <GlassTestimonials />
+      <SwiperTestimonials /> */}
+      {/* Frequenctly Asked Questions */}
+      <FAQ />
     </div>
   );
 }

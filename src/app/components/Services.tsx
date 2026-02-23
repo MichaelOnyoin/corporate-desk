@@ -11,7 +11,7 @@ import {
   CheckCircle,
 } from "lucide-react";
 import { motion } from "framer-motion";
-import ServiceHero from "./ServiceHero";
+//import ServiceHero from "./ServiceHero";
 import Hero from "./Hero";
 
 export function Services() {
@@ -152,6 +152,7 @@ export function Services() {
                 transition={{ duration: 0.6, ease: "easeOut", delay: 0.2 }}
                 viewport={{ once: true, amount: 0.2 }}
                 className="shadow-none"
+               // variants={fadeUp}
                 >
 
                 <div className="bg-black p-4 rounded-lg inline-block mb-6">

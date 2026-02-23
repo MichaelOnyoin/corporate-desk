@@ -1,0 +1,69 @@
+.glass-section {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #0f0f0f, #1c1c1c);
+  padding: 100px 40px;
+  text-align: center;
+  color: white;
+}
+
+.glass-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 60px;
+}
+
+.glass-section span {
+  color: #f5c542;
+}
+
+.glass-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.glass-card {
+  padding: 40px 30px;
+  border-radius: 20px;
+
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+
+  transition: all 0.3s ease;
+}
+
+.glass-quote {
+  font-style: italic;
+  line-height: 1.7;
+  margin-bottom: 30px;
+  opacity: 0.9;
+}
+
+.glass-user {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  justify-content: center;
+}
+
+.glass-user img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.glass-user h4 {
+  margin: 0;
+  color: #f5c542;
+}
+
+.glass-user span {
+  font-size: 14px;
+  opacity: 0.8;
+}

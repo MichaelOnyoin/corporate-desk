@@ -1,0 +1,57 @@
+.swiper-section {
+  background: #000;
+  color: white;
+  padding: 100px 40px;
+  text-align: center;
+}
+
+.swiper-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 60px;
+}
+
+.swiper-section span {
+  color: #f5c542;
+}
+
+.swiper-card {
+  background: linear-gradient(145deg, #1b1b1b, #2a2a2a);
+  padding: 40px 30px;
+  border-radius: 12px;
+  height: 100%;
+}
+
+.swiper-card p {
+  font-style: italic;
+  margin-bottom: 30px;
+  line-height: 1.7;
+}
+
+.swiper-user {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  justify-content: center;
+}
+
+.swiper-user img {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.swiper-user h4 {
+  margin: 0;
+  color: #f5c542;
+}
+
+.swiper-user span {
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+/* Pagination color */
+.swiper-pagination-bullet {
+  background: #f5c542 !important;
+}
