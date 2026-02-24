@@ -65,7 +65,7 @@ export function Footer() {
               </li>
               <li className="flex items-start gap-2 text-gray-400">
                 <MapPin className="w-4 h-4 text-[#D4AF37] mt-1 flex-shrink-0" />
-                <span className="text-sm">123 Business Ave, Suite 100<br />New York, NY 10001</span>
+                <span className="text-sm">Nakawa Business Park<br />Nakawa House, Plot 70003</span>
               </li>
             </ul>
           </div>

@@ -15,27 +15,28 @@ import {FAQ} from "./FAQ";
 import Testimonials from "./Testimonial";
 // import GlassTestimonials from "./GlassTestimonials";
 // import SwiperTestimonials from "./Swiper";
+import Stats from "./Stats";
 
 export function Home() {
   const features = [
     {
       icon: FileText,
-      title: "Complete Documentation",
+      title: "Name Reservation",
       description: "We handle all required paperwork and filings for your business registration.",
     },
     {
       icon: Shield,
-      title: "Legal Compliance",
+      title: "Company Incorporation",
       description: "Ensure your business meets all local, regional, and national requirements.",
     },
     {
       icon: Clock,
-      title: "Fast Processing",
+      title: "Trading Licenses",
       description: "Quick turnaround times to get your business up and running faster.",
     },
     {
       icon: CheckCircle,
-      title: "Expert Guidance",
+      title: "Post-registration Compliance",
       description: "Professional support throughout the entire registration process.",
     },
   ];
@@ -62,9 +63,9 @@ export function Home() {
             <div className="inline-block bg-[#D4AF37] text-black px-4 py-1.5 rounded-full text-sm mb-6">
               Trusted Registration & Documentation Services
             </div>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl mb-6 leading-tight">
-              Register Your Business
-              <span className="block text-[#D4AF37]">With Confidence</span>
+            <h1 className="text-3xl md:text-4xl lg:text-5xl mb-6 leading-tight">
+              We Help Entrepreneurs Register Companies with 
+              <span className="block text-[#D4AF37]">URSB & Stay Compliant in Uganda</span>
             </h1>
             <p className="text-lg md:text-xl text-gray-300 mb-8 max-w-2xl">
               We simplify the complex process of business registration, handling all legal
@@ -148,7 +149,7 @@ export function Home() {
       </section>
 
       {/* Stats Section */}
-      <section className="bg-white py-12 border-b">
+      {/* <section className="bg-white py-12 border-b">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {stats.map((stat, index) => (
@@ -164,7 +165,9 @@ export function Home() {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
+      {/* Stats Section */}
+      <Stats />
 
       {/* <Testimonial /> */}
       <Testimonials />

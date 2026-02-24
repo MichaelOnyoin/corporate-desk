@@ -18,19 +18,20 @@ export function Services() {
   const services = [
     {
       icon: Building,
-      title: "LLC Formation",
+      title: "Company Registration",
       description:
-        "Complete LLC registration services including articles of organization, operating agreements, and state filings.",
+        "Company registration services including articles of organization, operating agreements, and state filings.",
       features: [
         "Name availability check",
-        "Articles of organization",
-        "EIN registration",
-        "Operating agreement",
+        "Articles of Organization & Association",
+        "TIN registration",
+        "Company Incorporation",
+        "Trading licenses"
       ],
     },
     {
       icon: Briefcase,
-      title: "Corporation Setup",
+      title: "Company Update",
       description:
         "Full corporation formation services for C-Corps and S-Corps with all necessary documentation.",
       features: [
@@ -42,7 +43,7 @@ export function Services() {
     },
     {
       icon: Users,
-      title: "Partnership Registration",
+      title: "Drafting and Registration of Deed polls",
       description:
         "Partnership agreements and registration for general and limited partnerships.",
       features: [
@@ -54,7 +55,7 @@ export function Services() {
     },
     {
       icon: FileText,
-      title: "DBA Filing",
+      title: "Certification of Company Documents",
       description:
         "Doing Business As (DBA) name registration to operate under a different business name.",
       features: [
@@ -78,7 +79,7 @@ export function Services() {
     },
     {
       icon: Globe,
-      title: "Foreign Qualification",
+      title: "Reinstatement of Company",
       description:
         "Register your business to operate in multiple states with foreign qualification services.",
       features: [
@@ -90,7 +91,7 @@ export function Services() {
     },
     {
       icon: FileCheck,
-      title: "Annual Reports",
+      title: "Filling Annual Reports",
       description:
         "Stay compliant with annual report filing and business license renewal services.",
       features: [
@@ -102,7 +103,7 @@ export function Services() {
     },
     {
       icon: Shield,
-      title: "Registered Agent",
+      title: "Drafting and Registration of Statutory Declarations",
       description:
         "Professional registered agent services to receive legal documents on behalf of your business.",
       features: [

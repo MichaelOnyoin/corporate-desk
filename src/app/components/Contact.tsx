@@ -35,11 +35,11 @@ export function Contact() {
       const { Marker } = (await importLibrary("marker")) as google.maps.MarkerLibrary;
       //const { AdvancedMarkerElement, PinElement } = (await importLibrary("marker")) as google.maps.marker.AdvancedMarkerElement;
       //const { Marker } = (await importLibrary("marker")) as google.maps.marker.AdvancedMarkerElement;
-      const position = { lat: 0.35412392605044984, lng: 32.61194530921017 }; // Example: Nairobi-1.286389 36.817223 //, 32.61194530921017
-
+      const position = { lat: 0.3281852802015787, lng: 32.6127245994123 }; // Example: Nairobi-1.286389 36.817223 //, 32.61194530921017
+      //,  0.35412392605044984
       const mapOptions: google.maps.MapOptions = {
         center: position,
-        zoom: 14,
+        zoom: 15,
         mapId: "NEXT_MAP_ID", // Required for Advanced Markers
       };
 
@@ -180,9 +180,9 @@ export function Contact() {
                   <div>
                     <h3 className="text-black mb-1">Office</h3>
                     <p className="text-gray-600">
-                      123 Business Avenue, Suite 100
-                      <br />
-                      New York, NY 10001
+                      Nakawa Business Park
+                      <br/>
+                      Nakawa House, Plot 70003
                     </p>
                   </div>
                 </div>
