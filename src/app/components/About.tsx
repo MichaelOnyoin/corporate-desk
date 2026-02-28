@@ -82,12 +82,12 @@ export function About() {
                 <p>
                   Founded in 2026, Corporate Desk began with a simple mission: to demystify the
                   complex world of business registration and make it accessible to everyone. Our
-                  founder, Sarah Johnson, experienced firsthand the challenges of navigating legal
-                  paperwork when starting her first business.
+                  founder, Okello Wilson Edvan, experienced firsthand the challenges of navigating legal
+                  paperwork when starting his first business.
                 </p>
                 <p>
                   What started as a small consulting practice has grown into a full-service
-                  business registration firm, helping over 5,000 businesses successfully establish
+                  business registration firm, helping over 50 businesses successfully establish
                   and maintain their legal standing. Our team of experienced legal professionals
                   brings decades of combined expertise in business law, corporate compliance, and
                   regulatory requirements.
@@ -153,10 +153,10 @@ export function About() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          {/* <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-10">
             {team.map((member, index) => (
-              <div key={index} className="relative text-center group">
-                <div className="aspect-square rounded-lg overflow-hidden mb-4 border-4 border-black">
+              <div key={index} className="max-w-sm mx-auto bg-white rounded-2xl shadow-lg overflow-hidden transition transform hover:-translate-y-2 hover:shadow-2xl duration-300">
+                <div className="aspect-square rounded-lg overflow-hidden mb-4 border border-gray-200 hover:border-[#D4AF37] hover:shadow-lg">
                   <ImageWithFallback
                     src={member.image}
                     alt={member.name}
@@ -170,8 +170,46 @@ export function About() {
                 </div>
               </div>
             ))}
+          </div> */}
+
+          <div className="grid grid-cols-1 md:grid-cols-3 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            {team.map((member, index) => (
+            <div key={index} className="max-w-sm mx-auto bg-white rounded-2xl shadow-lg overflow-hidden transition transform hover:-translate-y-2 hover:shadow-2xl hover:shadow-[#D4AF37] duration-300">
+  
+              {/* <!-- Top Half (Image) --> */}
+              <div className="h-60 w-full">
+                <ImageWithFallback
+                  src={member.image}
+                  alt={member.name}
+                  className="w-full h-full object-cover"
+                />
+
+              </div>
+
+              {/* <!-- Bottom Half (Content) --> */}
+              <div className="p-6 text-center">
+                <h3 className="text-xl font-semibold text-gray-800">
+                  {member.name}
+                </h3>
+                
+                <p className="text-md text-[#D4AF37] font-medium mt-1">
+                  {member.role}
+                </p>
+                
+                <p className="text-gray-600 text-sm mt-4 leading-relaxed">
+                  {member.description}
+                </p>
+
+                {/* <button className="mt-6 inline-block px-5 py-2 bg-indigo-600 text-white text-sm font-medium rounded-lg hover:bg-indigo-700 transition duration-200">
+                  View Profile
+                </button> */}
+              </div>
+
+            </div>
+          ))}
           </div>
         </div>
+          
       </section>
 
       {/* Stats Section */}
