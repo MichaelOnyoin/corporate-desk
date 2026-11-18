@@ -63,8 +63,7 @@ export function Home() {
             <div className="inline-block bg-[#D4AF37] text-black px-4 py-1.5 rounded-full text-sm mb-6">
               Trusted Registration & Documentation Services
             </div>
-            <h1 className="text-3xl md:text-4xl lg:text-5xl mb-6 leading-tight">
-              We Help Entrepreneurs Register Companies with 
+            <h1 className="text-3xl md:text-4xl lg:text-5xl mb-6 leading-tight"> 
               <span className="block text-[#D4AF37]">URSB & Stay Compliant in Uganda</span>
             </h1>
             <p className="text-lg md:text-xl text-gray-300 mb-8 max-w-2xl">
